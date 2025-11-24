@@ -135,6 +135,7 @@
         }
 
         .info-label {
+            font-family: 'Space Grotesk', 'Noto Sans Thai', sans-serif;
             font-size: 0.85rem;
             color: var(--light-purple);
             font-weight: 600;
@@ -781,7 +782,6 @@
         <div class="loading-text">กำลังโหลด...</div>
     </div>
 
-    <!-- POPUP OVERLAY -->
     <div id="popupOverlay" class="popup-overlay">
         <div class="popup-container">
             <h2 class="popup-title">🔓 สิ่งที่ต้องทำ</h2>
@@ -826,7 +826,7 @@
             </section>
 
             <section class="section script-section">
-                <h2 class="section-title">✨ สคริป 99 คืนในป่า </h2>
+                <h2 class="section-title"> สคริป 🦇 99 Nights in the Forest 🔦</h2>
 
                 <!-- Info Box -->
                 <div class="info-box">
@@ -834,15 +834,19 @@
                     <div class="info-box-content">
                         <div class="info-item">
                             <span class="info-label">📅 อัพเดทล่าสุด</span>
-                            <span class="info-value">15 พฤศจิกายน 2025</span>
+                            <span class="info-value">24 พฤศจิกายน 2025</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">🎮 รองรับแมพ</span>
-                            <span class="info-value">99 Night in the Forest</span>
+                            <span class="info-value">🦇 99 Nights in the Forest 🔦</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">✅ สถานะ</span>
                             <span class="info-value" style="color: #10b981;">ทำงานได้ปกติ</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">⚠️ ไม่รองรับตัวรัน</span>
+                            <span class="info-value" style="color: #b9102f;">Xeno, Sorala</span>
                         </div>
                     </div>
                 </div>
@@ -851,7 +855,7 @@
                     <div class="script-content" id="scriptContent">
                         <pre><code class="language-lua">-- ไม่ต้องแปลภาษานะครับ คัดลอกเลยย
 
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/MQPS7/99-Night-in-the-Forset/refs/heads/main/99v7'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MQPS7/99-Night-in-the-Forset/refs/heads/main/99Nightv1'))()
 
 -- ใช้อย่างระมัดระวัง!!</code></pre>
                     </div>
@@ -883,6 +887,7 @@
 
         window.addEventListener("load", () => {
             popupOverlay.classList.add("active");
+            popupOverlay.classList.remove("active");
         });
 
         openAdBtn.addEventListener("click", () => {
